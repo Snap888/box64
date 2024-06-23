@@ -74,7 +74,7 @@ jobs:
               echo "IS_TERMUX=1" >> $GITHUB_ENV
               echo "QEMU_SET_ENV=LD_LIBRARY_PATH=/data/data/com.antutu.ABenchMark/files/usr/glibc/lib" >> $GITHUB_ENV
             else
-              echo "IS_TERMUX=1" >> $GITHUB_ENV
+              echo "IS_TERMUX=0" >> $GITHUB_ENV
             fi
           else
             if [[ ${{ matrix.platform }} == 'X64' ]]; then
