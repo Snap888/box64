@@ -70,9 +70,9 @@ jobs:
               sudo cp -rf data /
               sudo chmod 755 -R /data
               sudo chown -R $(whoami):$(whoami) /data
-              echo "CFLAGS=-L/data/data/com.antutu.Termux/files/usr/lib" >> $GITHUB_ENV
+              echo "CFLAGS=-L/data/data/com.antutu.ABenchMark/files/usr/lib" >> $GITHUB_ENV
               echo "IS_TERMUX=1" >> $GITHUB_ENV
-              echo "QEMU_SET_ENV=LD_LIBRARY_PATH=/data/data/com.Termux/files/usr/lib" >> $GITHUB_ENV
+              echo "QEMU_SET_ENV=LD_LIBRARY_PATH=/data/data/com.antutu.ABenchMark/files/usr/lib" >> $GITHUB_ENV
             else
               echo "IS_TERMUX=0" >> $GITHUB_ENV
             fi
